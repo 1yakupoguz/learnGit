@@ -15,8 +15,8 @@ Git checkout -> branchler arasında geçiş yapmayı sağlar
 Git checkout -b developer1 -> developer1 branchini oluşturur ve geçiş yapar
 Git push --set-upstream origin yak47 -> remote’ta var olmayan bir branchi önce oluşturup sonra içerisine commitleri pushlamaya yarar.
 Git merge developer1 -> main branchiyle developer1 branchini birleştirir.
-$ git config --global user.name "Yakup OĞUZ"
-$ git config --global user.email "1yakupoguz@gmail.com"
+git config --global user.name "Yakup OĞUZ"
+git config --global user.email "1yakupoguz@gmail.com"
 Kullanıcı adı ve mail belirlenir.
 Cd .. -> istenilen dosya yoluna gitmek için
 Touch deneme.txt bulunduğun yola dosya oluşturur
@@ -35,7 +35,7 @@ Git mv deneme.txt test.txt -> bu sekilde deneme dosyasını test dosyasına çev
 Git mv deneme.txt dd -> bu şekilde deneme.txt’yi dd klasörünün içine atar
 Git mv deneme.txt dd/abc.txt -> deneme.txt ‘ yi dd klasörünün içine abc ismiyle atar
 Git config –global alias.st status -> git status islemi git st’Ye dönüşür
-Git remote add origin https://github.com/EVAOtonom/EVA-Autonomous-Vehicle.git -> yüklenecek hesabı seçer
+Git remote add origin https://github.com/xxxxxx -> yüklenecek hesabı seçer
 Git push –u origin master -> master branchına pushlar
 Git pull -> githuba eklenenleri lokale çeker
 Dosya içinde gitignore açılır ve repoda paylaşılmayacak dosyalar buraya yazılır. Bu dosya projenin başında açılmalıdır.
