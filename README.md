@@ -1,4 +1,4 @@
-# **Git Nedir?**
+# ** KURS 1 Notlarım: Git Nedir?**
 Git, bir versiyon kontrol sistemidir. Lokal veya remote çalıştığınız projeleri versiyonlamak, bilgisayarınıza veya sanal depoya yüklemenizi sağlar.
 
 ---
