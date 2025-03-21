@@ -1,58 +1,120 @@
-# learnGit
-Kurs 1 notlarim:
 Git Nedir?
-Git bir versiyon kontrol sistemidir. Local veya remote çalıştığınız projeleri versiyonlamak, bilgisayarınıza veya sanal depoya yüklemenizi sağlar.
-Git komutları:
-Git diff -> committen önceki değişiklikleri gösterir
-Git clone https://github.com/1yakupoguz/learnGit.git -> linkteki repoyu locale kopyalar
-Git remote set-url origin https://youruser:password@github.com/user/repo.git -> şeklinde yüklerseniz hangi hesapla yükleyeceğinizide yazabilirsiniz.
-Git add README.md  -> Bu komutla istediğiniz dosyayı stage area’ya ekler.
-Git commit -a -m ‘test’- > tüm dosyaları test mesajıyla commitler.
-Git push -> ortak repoya localdeki dosyalarını yükler. 
-Git pull -> ortak repodan dosyaları çeker.
-Git log -> commitleri listeler
-Git checkout -> branchler arasında geçiş yapmayı sağlar
-Git checkout -b developer1 -> developer1 branchini oluşturur ve geçiş yapar
-Git push --set-upstream origin yak47 -> remote’ta var olmayan bir branchi önce oluşturup sonra içerisine commitleri pushlamaya yarar.
-Git merge developer1 -> main branchiyle developer1 branchini birleştirir.
-git config --global user.name "Yakup OĞUZ"
-git config --global user.email "1yakupoguz@gmail.com"
-Kullanıcı adı ve mail belirlenir.
-Cd .. -> istenilen dosya yoluna gitmek için
-Touch deneme.txt bulunduğun yola dosya oluşturur
-Git add “index.html” -> bu dosyayı stage areaya gönderir
-Git status-> bulunduğun konumdaki dosyaların commit durumunu gösterir
-Git commit –m “commit1”-> commit1 mesajıyla beraber commit işlemini yapar
-Git log ->commitleri listeler
-Git log –oneline -> kısaltılmış bir commit listesi sunar
-Git checkout ‘dönmek istediğin log numarasını git log’dan al’ -- . -> istediğin loga dön
-Git diff -> dosya içerisinde yapılan değişiklikleri + - halinde gösterir
-Git checkout – dosya.adi -> geri alma işlemi yapar
-git reset HEAD deneme4.txt dosya staging areada ise dosyayı geri çeker
-Git rm dosya.txt -> silme işlemi yapacağınız
-Git rm –r test/ -> test klasörünü içindekilerle beraber siler
-Git mv deneme.txt test.txt -> bu sekilde deneme dosyasını test dosyasına çevirir
-Git mv deneme.txt dd -> bu şekilde deneme.txt’yi dd klasörünün içine atar
-Git mv deneme.txt dd/abc.txt -> deneme.txt ‘ yi dd klasörünün içine abc ismiyle atar
-Git config –global alias.st status -> git status islemi git st’Ye dönüşür
-Git remote add origin https://github.com/xxxxxx -> yüklenecek hesabı seçer
-Git push –u origin master -> master branchına pushlar
-Git pull -> githuba eklenenleri lokale çeker
-Dosya içinde gitignore açılır ve repoda paylaşılmayacak dosyalar buraya yazılır. Bu dosya projenin başında açılmalıdır.
-Gitignore nedir?
-Git deposuna eklenmeyecek dosyalar .gitignore klasörü içine yazılır
-Master branch canlıda olan
-Dev branch geliştirilen
-Git branch –all (remote, local tüm branchlari gösterir)
-Git fetch (remote branch çekmeye yarar)
-Git pull
-Git checkout dev ->dev branchine geçer
-Git merge dev ->devden mastera dosyaları alır // canlıya alır
-Git fetch –p git branchlere bak olmayanları sil
-Git branch –D test lokaldeki test branchini siler
-rm -rf EOGC -> Git deposunu silmeye yarar
 
-Stage Area: Commitlenmesini istediğiniz dosyaları eklediğiniz alan.
-Tavsiye kaynaklar : 
-https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud 
-https://learngitbranching.js.org/
+Git, bir versiyon kontrol sistemidir. Lokal veya remote çalıştığınız projeleri versiyonlamak, bilgisayarınıza veya sanal depoya yüklemenizi sağlar.
+
+Git Komutları
+
+Genel Komutlar:
+
+git diff -> Commit'ten önceki değişiklikleri gösterir.
+
+git clone https://github.com/1yakupoguz/learnGit.git -> Linkteki repoyu locale kopyalar.
+
+git remote set-url origin https://youruser:password@github.com/user/repo.git -> Hangi hesapla yükleyeceğinizi belirtebilirsiniz.
+
+git add README.md -> Belirtilen dosyayı stage area'ya ekler.
+
+git commit -a -m 'test' -> Tüm dosyaları "test" mesajıyla commit eder.
+
+git push -> Ortak repoya localdeki dosyaları yükler.
+
+git pull -> Ortak repodan dosyaları çeker.
+
+git log -> Commit'leri listeler.
+
+Branch Yönetimi:
+
+git checkout -> Branch'ler arasında geçiş yapmayı sağlar.
+
+git checkout -b developer1 -> "developer1" branch'ini oluşturur ve geçiş yapar.
+
+git push --set-upstream origin yak47 -> Remote'ta var olmayan bir branch oluşturur ve içine commitleri pushlar.
+
+git merge developer1 -> Main branch'i ile developer1 branch'ini birleştirir.
+
+Kullanıcı Bilgileri Ayarlama:
+
+git config --global user.name "Yakup OĞUZ"
+
+git config --global user.email "1yakupoguz@gmail.com"
+
+Dosya ve Dizin İşlemleri:
+
+cd .. -> Bir üst dizine gider.
+
+touch deneme.txt -> Bulunduğun dizinde yeni bir dosya oluşturur.
+
+git add "index.html" -> "index.html" dosyasını stage area'ya ekler.
+
+git status -> Bulunduğun konumdaki dosyaların commit durumunu gösterir.
+
+git commit -m "commit1" -> "commit1" mesajıyla commit işlemi yapar.
+
+git log --oneline -> Kısaltılmış commit listesi sunar.
+
+git checkout <log_numarası> -- . -> Belirtilen commit'e geri döner.
+
+Değişiklikleri Yönetme:
+
+git diff -> Dosya içerisinde yapılan değişiklikleri + / - olarak gösterir.
+
+git checkout -- dosya.adi -> Geri alma işlemi yapar.
+
+git reset HEAD deneme4.txt -> Dosya staging area'daysa geri çeker.
+
+git rm dosya.txt -> Dosyayı siler.
+
+git rm -r test/ -> "test" klasörünü içindekilerle beraber siler.
+
+git mv deneme.txt test.txt -> "deneme.txt" dosyasını "test.txt" olarak değiştirir.
+
+git mv deneme.txt dd/ -> "deneme.txt" dosyasını "dd" klasörüne taşır.
+
+git mv deneme.txt dd/abc.txt -> "deneme.txt" dosyasını "dd" klasörüne "abc.txt" ismiyle taşır.
+
+Alias Kullanımı:
+
+git config --global alias.st status -> git status komutunu git st olarak kısaltır.
+
+Remote İşlemleri:
+
+git remote add origin https://github.com/xxxxxx -> Remote bağlantısı ekler.
+
+git push -u origin master -> Master branch'ine push yapar.
+
+git pull -> Github'a eklenenleri locale çeker.
+
+Gitignore Nedir?
+
+.gitignore dosyası, Git deposuna eklenmeyecek dosyaları belirler.
+
+Projenin başında oluşturulması tavsiye edilir.
+
+Branch Yönetimi:
+
+git branch -all -> Remote ve local tüm branch'leri gösterir.
+
+git fetch -> Remote branch'leri çeker.
+
+git pull -> Remote değişiklikleri alır.
+
+git checkout dev -> "dev" branch'ine geçer.
+
+git merge dev -> "dev" branch'inden "master" branch'ine dosyaları alır (canlıya alır).
+
+git fetch -p -> Remote'ta olmayan branch'leri temizler.
+
+git branch -D test -> Lokaldeki "test" branch'ini siler.
+
+rm -rf EOGC -> Git deposunu silmeye yarar.
+
+Stage Area Nedir?
+
+Commit'lenmesini istediğiniz dosyaları eklediğiniz alan.
+
+Tavsiye Kaynaklar:
+
+Git Atlassian Eğitimleri
+
+Learn Git Branching
+
